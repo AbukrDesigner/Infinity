@@ -1,0 +1,155 @@
+#hero-section{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url(".../../../../../assets/images/cargo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    #hero-section {
+        height: 400px;
+        padding: 1rem 0;
+    }
+}
+#graphiques{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url("/assets/images/pc_image.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    width: auto;
+    background-repeat: no-repeat;
+    height: 620px;
+    border-radius: 20px;
+    padding: 2rem 0;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#graphiques .align-text-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    width:auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#graphiques h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+#graphiques span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#graphiques .btn {
+    background-color:white!important;
+    color: #2563EB !important;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    // box-shadow: 0 4px 12px rgba(0, 158, 224, 0.3);
+    margin-top: 0;
+}
+
+#graphiques .btn:hover {
+    background-color: white !important;
+    transform: translateY(-2px);
+    
+    color: #2563EB !important;
+    text-decoration: none;
+}
+
+.cercle{
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.cercle.bleu{
+background-color: #009EE0;
+}
+.cercle.secondarry{
+background-color: #9CA3AF;
+}
+.textcardColor{
+    color: #009EE0;
+}
+.cercle-frame{
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #DBEAFE;
+    color: #2563EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+footer{
+    background-color: #1F2937;
+    color: white;
+}
+.btn-bientot{
+    font-size: 11px;
+}
+
+// Styles pour les tooltips personnalisés
+.custom-tooltip {
+    background-color: #0b428f46;
+    color: white;
+    
+  
+}
+
+// Animation de respiration pour le bouton "Bientôt disponible"
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+.breathing-button {
+    animation: breathing 3s ease-in-out infinite;
+    transition: all 0.3s ease;
+}
+
+.breathing-button:hover {
+    animation-play-state: paused;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.4);
+}
+

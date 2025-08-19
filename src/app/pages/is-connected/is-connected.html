@@ -1,0 +1,222 @@
+<!-- Header -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container py-2">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="javascript:(0)">
+        <img src="assets/images/Logo.svg" alt="Infinity Analytics" height="40" class="me-2" loading="eager">
+        
+      </a>
+
+      <!-- Toggle button for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="javascript:(0)">
+              <i class="bi bi-chat-dots me-1"></i>
+              Feedback
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="javascript:(0)">
+              <i class="bi bi-question-circle me-1"></i>
+              Aide & Support
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <span class="identite" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;"><span>ID</span></span>
+            <ul class="dropdown-menu dropdown-menu-center" style="left: auto; right: 0; transform: translateX(-20px);">
+              <li>
+                <div class="dropdown-item d-flex align-items-center" style="cursor: pointer;">
+                  <div class="avatar me-3">
+                    <span class="avatar-text">ID</span>
+                  </div>
+                  <div>
+                    <div class="fw-bold">Issa Dieye</div>
+                   <div class="text-muted small">issa.dieye&#64;retbadigital.com</div>
+                  </div>
+                </div>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="javascript:(0)">
+                  <i class="bi bi-person-circle me-2 text-muted"></i>
+                  Profil
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="javascript:(0)">
+                  <i class="bi bi-circle-half me-2 text-muted"></i>
+                  Thème
+                </a>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item d-flex align-items-center text-danger" href="javascript:(0)" (click)="LogOut()">
+                  <i class="bi bi-box-arrow-right me-2"></i>
+                  Se déconnecter
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Hero Section -->
+<section class="hero-section position-relative">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center text-white pt-4 pt-md-0">
+        <h1 class=" fw-bold mb-3">Infinity Analytics</h1>
+        <h5 class=" mb-4">PORTS & CUSTOMS</h5>
+        <p class="lead fs-4  text-white">Bienvenue sur la plateforme d'analyse prédictive des données portuaires et douanières</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<main class="py-3">
+  <div class="container">
+    <h2 class="text-center mb-5">Modules d'analyse disponibles</h2>
+    
+    <div class="row g-4">
+      <!-- ACTEURS Card -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+                <span class="cercle-frame mx-auto"> <i class="bi bi-people-fill"></i></span>
+             
+            </div>
+            <h5 class="card-title subtitle fw-bold mb-3">ACTEURS</h5>
+            <p class="card-text text-muted mb-4">Analyse des opérateurs portuaires et des intervenants du système</p>
+            <div class="d-flex flex-column gap-2">
+              <a href="javascript:(0)" class="text-decoration-none text-reset  d-flex align-items-center justify-content-between">
+                Consignataires
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="javascript:(0)" class="text-decoration-none text-reset d-flex align-items-center justify-content-between">
+                Transporteurs
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="javascript:(0)" class="text-decoration-none text-reset d-flex align-items-center justify-content-between">
+                Douanes
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GÉOGRAPHIE Card -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+                <span class="cercle-frame mx-auto"><i class="bi bi-globe"></i></span>
+              
+            </div>
+            <h5 class="card-title subtitle fw-bold mb-3">GÉOGRAPHIE</h5>
+            <p class="card-text text-muted mb-4">Suivi des flux par origine et destination</p>
+            <div class="d-flex flex-column gap-2">
+              <a href="javascript:(0)" class="text-decoration-none text-reset d-flex align-items-center justify-content-between">
+                Destinations
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="javascript:(0)" class="text-decoration-none text-reset d-flex align-items-center justify-content-between">
+                Origines
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="javascript:(0)" class="text-decoration-none text-reset d-flex align-items-center justify-content-between">
+                Embarquements
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DÉCLARATIONS Card -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="mb-3">
+                <span class="cercle-frame mx-auto"><i class="bi bi-file-earmark-text"></i></span>
+              
+            </div>
+            <h5 class="card-title subtitle fw-bold mb-3">DÉCLARATIONS</h5>
+            <p class="card-text text-muted mb-4">Gestion des dossiers et marchandises</p>
+            <div class="d-flex flex-column gap-2">
+              <a href="javascript:(0)" class="text-decoration-none text-reset d-flex align-items-center justify-content-between">
+                Dossiers
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="javascript:(0)" class="text-decoration-none text-reset d-flex align-items-center justify-content-between">
+                Marchandises
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="javascript:(0)" class="text-decoration-none text-reset d-flex align-items-center justify-content-between">
+                Conformité
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRÉDICTIONS Card -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body text-center p-4">
+            <div class="mb-3 ">
+                <span class="cercle-frame mx-auto"><i class="bi bi-clock-history"></i></span>
+              
+            </div>
+            <h5 class="card-title subtitle fw-bold mb-3">PRÉDICTIONS</h5>
+            <p class="card-text text-muted mb-4">Analyses prédictives et tendances</p>
+            <div class="d-flex flex-column gap-2">
+              <a href="javasript:(0)" class="text-decoration-none text-reset  d-flex align-items-center justify-content-between">
+                Prévisions
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="javasript:(0)" class="text-decoration-none text-reset  d-flex align-items-center justify-content-between">
+                Tendances
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="javasript:(0)" class="text-decoration-none text-reset  d-flex align-items-center justify-content-between">
+                Alertes
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="sticky-bottom">
+    <div class="bg">
+     <div class="container">
+         <div class="d-flex align-items-center justify-content-between py-3">
+         <small>&copy; 2025 Copyright | Une solution <span class="fw-bold text-decoration-underline text-uppercase"> GAINDE 2000 / BANGATH SYSTEMS</span></small>
+         <div class="d-flex align-items-center gap-3 justify-content-center">
+             <small>Confidentialité</small>
+             <small>Conditions</small>
+             <small>Légal</small>
+ 
+         </div>
+     </div>
+     </div>
+    </div>
+ </footer>

@@ -1,0 +1,24 @@
+.pwd{
+    color: #009EE0;
+}
+
+.pwdInput{
+    right: 10px; top: 50%; 
+    transform: translateY(-50%); 
+    background: none;
+     border: none;
+      color: #6c757d;
+}
+
+.submit{
+    background-color: #009EE0;
+    border-color: #009EE0;
+    color: white;
+}
+
+.submit:focus{
+    background-color: #009EE0;
+     border-color: #009EE0;
+      color: white;
+       padding: 12px 24px;
+}

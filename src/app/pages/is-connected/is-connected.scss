@@ -1,0 +1,166 @@
+
+.hero-section{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images/cargo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: calc(100% - 40px);
+    min-height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+}
+
+// Largeur fixe uniquement pour les écrans large (lg)
+@media (min-width: 992px) {
+    .hero-section {
+        width: 1260px;
+    }
+}
+
+// Marges pour les écrans moyens
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-section {
+        width: calc(100% - 60px);
+    }
+}
+
+// Marges pour les petits écrans
+@media (max-width: 767px) {
+    .hero-section {
+        width: calc(100% - 30px);
+    }
+}
+
+// Responsive breakpoints pour hero-section
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 250px;
+        margin: 80px auto 0 auto;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 200px;
+        margin: 60px auto 0 auto;
+        padding: 20px 10px;
+        border-radius: 15px;
+    }
+}
+
+.subtitle{
+    color: #009EE0;
+}
+.cercle-frame{
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #009EE0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+// Animation pour les cartes au survol
+.card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+  background-color: #3247CC !important;
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover a {
+  color: white !important;
+}
+
+.card:hover .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+// Animation pour les icônes dans les cercles au survol
+.cercle-frame {
+  transition: all 0.3s ease;
+}
+
+.card:hover .cercle-frame {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.identite{
+width: 40px;
+height: 40px;
+background-color: #D1D5DB;
+border-radius: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.3s ease;
+}
+
+.identite:hover {
+  background-color: #9CA3AF;
+  transform: scale(1.05);
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 0;
+  min-width: 280px;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-top: 8px;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #F3F4F6;
+  border-radius: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #D1D5DB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-text {
+  color: #6B7280;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dropdown-divider {
+  margin: 8px 0;
+  border-color: #E5E7EB;
+}
+
+footer{
+    background-color: #1F2937;
+    color: white;
+}
